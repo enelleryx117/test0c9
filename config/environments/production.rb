@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # Added for devise installations
+  config.action_mailer.default_url_options = { host: 'https://test0-enelleryx117.c9users.io' }
 end
