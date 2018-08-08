@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # NEWLY ADDED GEMS TO THE PROJECT
 gem 'bootstrap-sass', '~> 3.3.1.0' 
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'paperclip', '~> 6.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

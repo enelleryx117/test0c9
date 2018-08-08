@@ -49,7 +49,7 @@ class PinsController < ApplicationController
   # DELETE /pins/1.json
   def destroy
     @pin.destroy
-    redirect_to pins_url
+    redirect_to pins_url, notice: 'Pin was successfully deleted'
   end
 
   private
@@ -60,7 +60,7 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :images)
     end
 end
 
@@ -70,3 +70,5 @@ def correct_user
       redirect_to pins_path, notice: "Not Authorized To Edit This Pin" if @pin.nil?
       
 end
+
+
