@@ -60,7 +60,7 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description, :images)
+      params.require(:pin).permit(:description, :image)
     end
 end
 
