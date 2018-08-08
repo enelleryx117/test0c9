@@ -3,7 +3,7 @@
       
         <%= link_to image_tag(pin.image.url(:medium)), pin %><br/>
         <%= pin.description %><br/>
-        <%= pin.user.email if pin.user %><br/>
+        <%= pin.user.name if pin.user %><br/>
         
         <% if pin.user == current_user %>
           <%= link_to 'Edit', edit_pin_path(pin) %> |
