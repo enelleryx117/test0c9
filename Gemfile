@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass', '~> 3.3.1.0' 
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'paperclip', '~> 6.1'
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.4'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
